@@ -5,7 +5,7 @@
 
 html, body {
 	min-width: 100vw;
-	min-height: 100vh;
+	min-height: calc(100vh - 44px);
 
 	background-color: #fff;
 }
@@ -13,7 +13,9 @@ html, body {
 @import "modules/full";
 @import "modules/center";
 @import "modules/bg";
+@import "modules/label";
 @import "modules/nav";
 
 @import "page/welcome";
 @import "page/trending";
+@import "page/gallery";

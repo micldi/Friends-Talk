@@ -1,10 +1,11 @@
-.navbar {
+.navbar-top {
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
-	border-radius: 0;
+
+	padding: 10px;
 
 	ul {
 		list-style: none;
@@ -27,6 +28,62 @@
     		&.title {
     			margin: 0 auto;
     		}
+		}
+	}
+}
+
+.navbar-side {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 200;
+	top: 0;
+	left: 0;
+
+	background-image: url('https://static.pexels.com/photos/33227/sunrise-phu-quoc-island-ocean-large.jpg');
+	background-size: cover;
+	background-position: center;
+
+	.content {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+
+		background-color: rgba(61, 78, 91, 0.25);
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 0 40px;
+			li {
+				margin: 20px 0;
+				a {
+					font-size: 20px;
+					font-weight: 400;
+				}
+			}
+		}
+
+		.userInfo {
+			position: absolute;
+			left: 40px;
+			bottom: 20px;
+			width: 100%;
+
+			.userAvatar {
+				width: 50px;
+			}
+
+			h6, a {
+				margin: 0;
+				padding: 0;
+			}
+
+			.media-body {
+				padding: 6px 0 0 10px;
+			}
 		}
 	}
 }

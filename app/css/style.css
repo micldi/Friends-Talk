@@ -32,7 +32,7 @@ a {
 
 html, body {
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 44px);
   background-color: #fff; }
 
 .full {
@@ -47,6 +47,10 @@ html, body {
 .centerHV {
   max-width: 80%; }
 
+.centerContainerV {
+  display: flex;
+  align-items: center; }
+
 .bg-gradient {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e59a72+0,e0735e+50,d23c3e+100 */
   background: #e59a72;
@@ -55,14 +59,34 @@ html, body {
   background: linear-gradient(135deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e59a72', endColorstr='#d23c3e',GradientType=1 ); }
 
-.navbar {
+.label {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 65%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem; }
+
+.label-pill {
+  padding-right: .6em;
+  padding-left: .6em;
+  border-radius: 10rem; }
+
+.label-red {
+  background-color: #df665b; }
+
+.navbar-top {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  border-radius: 0; }
-  .navbar ul {
+  padding: 10px; }
+  .navbar-top ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -74,10 +98,49 @@ html, body {
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: space-around; }
-    .navbar ul li {
+    .navbar-top ul li {
       text-align: center; }
-      .navbar ul li.title {
+      .navbar-top ul li.title {
         margin: 0 auto; }
+
+.navbar-side {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background-image: url("https://static.pexels.com/photos/33227/sunrise-phu-quoc-island-ocean-large.jpg");
+  background-size: cover;
+  background-position: center; }
+  .navbar-side .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(61, 78, 91, 0.25); }
+    .navbar-side .content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 40px; }
+      .navbar-side .content ul li {
+        margin: 20px 0; }
+        .navbar-side .content ul li a {
+          font-size: 20px;
+          font-weight: 400; }
+    .navbar-side .content .userInfo {
+      position: absolute;
+      left: 40px;
+      bottom: 20px;
+      width: 100%; }
+      .navbar-side .content .userInfo .userAvatar {
+        width: 50px; }
+      .navbar-side .content .userInfo h6, .navbar-side .content .userInfo a {
+        margin: 0;
+        padding: 0; }
+      .navbar-side .content .userInfo .media-body {
+        padding: 6px 0 0 10px; }
 
 .signinHeader {
   position: absolute;
@@ -190,3 +253,53 @@ html, body {
               color: #e37985; }
             .trending.posts .post .reaction ul li a:hover, .trending.posts .post .reaction ul li a:focus {
               color: rgba(0, 0, 0, 0.5); }
+
+.gallery.posts {
+  margin-top: 40px;
+  width: 100%;
+  min-height: calc(100vh - 44px);
+  position: relative;
+  padding: 10px;
+  background-color: #eef0f1;
+  column-count: 2;
+  column-gap: 10px; }
+  .gallery.posts .post {
+    margin: 10px 0 0 0;
+    display: inline-block;
+    width: 100%;
+    color: black; }
+    .gallery.posts .post .content {
+      width: 100%; }
+      .gallery.posts .post .content .img-fluid {
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px; }
+    .gallery.posts .post .reaction {
+      padding: 10px;
+      background-color: white;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px; }
+      .gallery.posts .post .reaction ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around; }
+        .gallery.posts .post .reaction ul li {
+          text-align: center; }
+          .gallery.posts .post .reaction ul li a {
+            color: #000;
+            font-size: 14px; }
+            .gallery.posts .post .reaction ul li a i {
+              margin-left: 5px;
+              color: #e37985; }
+            .gallery.posts .post .reaction ul li a:hover, .gallery.posts .post .reaction ul li a:focus {
+              color: rgba(0, 0, 0, 0.5); }
+          .gallery.posts .post .reaction ul li.tag {
+            margin: 0 auto;
+            line-height: 19px; }

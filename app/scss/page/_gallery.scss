@@ -1,0 +1,74 @@
+.gallery.posts {
+	margin-top: 40px;
+	width: 100%;
+	min-height: calc(100vh - 44px);
+	position: relative;
+
+	padding: 10px;
+
+	background-color: map-get($colors, gray);
+
+	column-count: 2;
+    column-gap: 10px;
+
+	.post {
+		margin: 10px 0 0 0;
+		display: inline-block;
+		width: 100%;
+		//float: left;
+		color: black;
+
+		.content {
+			width: 100%;
+			.img-fluid {
+				border-top-right-radius: 4px;
+				border-top-left-radius: 4px;
+			}
+		}
+
+		.reaction {
+			padding: 10px;
+			background-color: white;
+
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				width: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				  
+				-webkit-flex-flow: row wrap;
+				justify-content: space-around;
+
+				li {
+					text-align: center;
+					a {
+						color: map-get($colors, black);
+						font-size: 14px;
+						i {
+							margin-left: 5px;
+							color: map-get($colors, pink);
+						}
+						&:hover,
+						&:focus {
+							color: map-get($colors, lightBlack);
+						}
+					}
+					&.tag {
+						margin: 0 auto;
+						line-height: 19px;
+					}
+				}
+			}
+		}
+	}
+}
