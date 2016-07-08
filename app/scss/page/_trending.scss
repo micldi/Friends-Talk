@@ -1,0 +1,100 @@
+.trending.posts {
+	margin-top: 40px;
+	width: 100%;
+	position: relative;
+	.post {
+		border-bottom: 2px solid map-get($colors, gray);
+
+
+		color: black;
+	 	.tag {
+			color: map-get($colors, pink);
+		}
+		.row {
+			width: 100%;
+			margin: 0;
+		}
+
+		.col-xs-6 {
+			margin: 0;
+			padding: 0;
+		}
+
+		.info {
+			width: 100%;
+			height: 90px;
+			padding: 10px 5px;
+			position: relative;
+
+			.userAvatar {
+				height: 70px;
+			}
+
+			.media-body {
+				padding: 12px 10px;
+				text-align: left;
+			}
+
+			h6, a {
+				margin: 0;
+				padding: 0;
+			}
+
+			.mapMark {
+				font-size: 40px;
+				line-height: 65px;
+				color: map-get($colors, darkBlue);
+			}
+		}
+
+		.content {
+			background-color: #f9fbfc;
+			padding-bottom: 10px;
+			p {
+				margin: 10px 10px 0 10px;
+				text-align: justify;
+				font-size: 15px;
+				.tag {
+					font-size: 15px;
+				}
+			}
+		}
+
+		.reaction {
+			padding: 10px 0;
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				width: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				  
+				-webkit-flex-flow: row wrap;
+				justify-content: space-around;
+
+				li {
+					text-align: center;
+					a {
+						color: map-get($colors, black);
+						font-size: 14px;
+						i {
+							margin-left: 5px;
+							color: map-get($colors, pink);
+						}
+						&:hover,
+						&:focus {
+							color: map-get($colors, lightBlack);
+						}
+					}
+				}
+			}
+		}
+	}
+}

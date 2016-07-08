@@ -55,6 +55,30 @@ html, body {
   background: linear-gradient(135deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e59a72', endColorstr='#d23c3e',GradientType=1 ); }
 
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-radius: 0; }
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around; }
+    .navbar ul li {
+      text-align: center; }
+      .navbar ul li.title {
+        margin: 0 auto; }
+
 .signinHeader {
   position: absolute;
   width: 100%;
@@ -100,3 +124,69 @@ html, body {
     font-size: 20px; }
     .signinFooter .register:hover, .signinFooter .register:focus {
       color: rgba(0, 0, 0, 0.5) !important; }
+
+.trending.posts {
+  margin-top: 40px;
+  width: 100%;
+  position: relative; }
+  .trending.posts .post {
+    border-bottom: 2px solid #eef0f1;
+    color: black; }
+    .trending.posts .post .tag {
+      color: #e37985; }
+    .trending.posts .post .row {
+      width: 100%;
+      margin: 0; }
+    .trending.posts .post .col-xs-6 {
+      margin: 0;
+      padding: 0; }
+    .trending.posts .post .info {
+      width: 100%;
+      height: 90px;
+      padding: 10px 5px;
+      position: relative; }
+      .trending.posts .post .info .userAvatar {
+        height: 70px; }
+      .trending.posts .post .info .media-body {
+        padding: 12px 10px;
+        text-align: left; }
+      .trending.posts .post .info h6, .trending.posts .post .info a {
+        margin: 0;
+        padding: 0; }
+      .trending.posts .post .info .mapMark {
+        font-size: 40px;
+        line-height: 65px;
+        color: #3d4e5b; }
+    .trending.posts .post .content {
+      background-color: #f9fbfc;
+      padding-bottom: 10px; }
+      .trending.posts .post .content p {
+        margin: 10px 10px 0 10px;
+        text-align: justify;
+        font-size: 15px; }
+        .trending.posts .post .content p .tag {
+          font-size: 15px; }
+    .trending.posts .post .reaction {
+      padding: 10px 0; }
+      .trending.posts .post .reaction ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around; }
+        .trending.posts .post .reaction ul li {
+          text-align: center; }
+          .trending.posts .post .reaction ul li a {
+            color: #000;
+            font-size: 14px; }
+            .trending.posts .post .reaction ul li a i {
+              margin-left: 5px;
+              color: #e37985; }
+            .trending.posts .post .reaction ul li a:hover, .trending.posts .post .reaction ul li a:focus {
+              color: rgba(0, 0, 0, 0.5); }
