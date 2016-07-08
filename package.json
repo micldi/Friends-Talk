@@ -1,0 +1,29 @@
+{
+  "name": "friends-talk",
+  "version": "1.0.0",
+  "description": "App for integration with friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micldi/Friends-Talk.git"
+  },
+  "keywords": [
+    "app",
+    "friends",
+    "talk"
+  ],
+  "author": "mic_ldi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micldi/Friends-Talk/issues"
+  },
+  "homepage": "https://github.com/micldi/Friends-Talk#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}

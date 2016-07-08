@@ -1,0 +1,102 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico';
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  color: rgba(255, 255, 255, 0.95); }
+
+h1 {
+  font-weight: 400; }
+
+p, a, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+a {
+  color: rgba(255, 255, 255, 0.95); }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6); }
+
+.picLogo {
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.95); }
+
+.textLogo {
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px; }
+
+.text-invert p, .text-invert a, .text-invert i, .text-invert h1, .text-invert h2, .text-invert h3, .text-invert h4, .text-invert h5, .text-invert h6 {
+  color: #000; }
+
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #fff; }
+
+.full {
+  min-width: 100vw;
+  min-height: 100vh; }
+
+.centerContainerHV {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.centerHV {
+  max-width: 80%; }
+
+.bg-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e59a72+0,e0735e+50,d23c3e+100 */
+  background: #e59a72;
+  background: -moz-linear-gradient(-45deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
+  background: -webkit-linear-gradient(-45deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
+  background: linear-gradient(135deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e59a72', endColorstr='#d23c3e',GradientType=1 ); }
+
+.signinHeader {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 0; }
+  .signinHeader .close {
+    position: absolute;
+    right: 30px;
+    top: 4px; }
+
+.form-group {
+  margin: 0;
+  margin-bottom: 20px; }
+  .form-group .form-control {
+    border-radius: 0;
+    padding: 15px 10px; }
+    .form-group .form-control:first-child {
+      border-bottom-color: transparent; }
+      .form-group .form-control:first-child:focus {
+        border-bottom-color: #66afe9; }
+
+.btn-form {
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  padding: 15px 10px;
+  color: rgba(255, 255, 255, 0.95); }
+
+.forgot {
+  margin-top: 10px;
+  display: block;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5) !important; }
+  .forgot:hover, .forgot:focus {
+    color: #000 !important; }
+
+.signinFooter {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 0; }
+  .signinFooter .register {
+    font-size: 20px; }
+    .signinFooter .register:hover, .signinFooter .register:focus {
+      color: rgba(0, 0, 0, 0.5) !important; }

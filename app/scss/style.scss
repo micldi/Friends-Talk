@@ -1,0 +1,17 @@
+@import "modules/rwd";
+
+@import "modules/colors";
+@import "modules/typo";
+
+html, body {
+	min-width: 100vw;
+	min-height: 100vh;
+
+	background-color: #fff;
+}
+
+@import "modules/full";
+@import "modules/center";
+@import "modules/bg";
+
+@import "page/welcome";

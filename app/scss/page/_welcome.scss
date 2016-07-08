@@ -1,0 +1,65 @@
+.signinHeader {
+	position: absolute;
+	width: 100%;
+	top: 20px;
+	left: 0;
+	
+	.close {
+		position: absolute;
+		right: 30px;
+		top: 4px;
+	}
+}
+
+.form-group {
+	margin: 0;
+
+	.form-control {
+		border-radius: 0;
+		padding: 15px 10px;
+		&:first-child {
+			border-bottom-color: transparent;
+			&:focus {
+				border-bottom-color: #66afe9;
+			}
+		}
+	}
+
+	margin-bottom: 20px;
+}
+
+.btn-form {
+	border-radius: 0;
+	border: none;
+	width: 100%;
+	padding: 15px 10px;
+
+	color: map-get($colors, white);
+}
+
+.forgot {
+	margin-top: 10px;
+	display: block;
+
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5) !important;
+	&:hover,
+	&:focus {
+		color: map-get($colors, black) !important;
+	}
+}
+
+.signinFooter {
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	left: 0;
+
+	.register {
+		font-size: 20px;
+		&:hover,
+		&:focus {
+			color: rgba(0, 0, 0, 0.5) !important;
+		}
+	}
+}

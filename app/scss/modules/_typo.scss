@@ -1,0 +1,45 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico';
+
+body {
+	//font-family: 'Pacifico', cursive;
+	font-family: 'Lato', sans-serif;
+
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+	color: map-get($colors, white);
+}
+
+h1 {
+	font-weight: 400;
+}
+p, a, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+a {
+	color: map-get($colors, white);
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: rgba(255,255,255,0.6);
+	}
+}
+
+.picLogo {
+	font-size: 100px;
+	margin-bottom: 20px;
+	color: map-get($colors, white);
+}
+.textLogo {
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 20px;
+}
+
+.text-invert {
+	p, a, i, h1, h2, h3, h4, h5, h6 {
+		color: map-get($colors, black);
+	}
+}
