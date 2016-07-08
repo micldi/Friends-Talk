@@ -5,7 +5,7 @@
 	left: 0;
 	z-index: 100;
 
-	padding: 10px;
+	padding: 10px 10px;
 
 	ul {
 		list-style: none;
@@ -25,9 +25,25 @@
 
 		li {
 			text-align: center;
+			padding: 5px;
     		&.title {
     			margin: 0 auto;
     		}
+    		&.active {
+    			border-bottom: 1px solid #fff;
+
+    			&:hover {
+    				border-bottom-color: rgba(255,255,255,0.6);
+
+    				a {
+    					color: rgba(255,255,255,0.6);
+    				}
+    			}
+    		}
+		}
+
+		&.tab {
+			margin: 10px 0 0 0;
 		}
 	}
 }

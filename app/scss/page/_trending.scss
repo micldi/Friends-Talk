@@ -1,5 +1,5 @@
 .trending.posts {
-	margin-top: 40px;
+	margin-top: 54px;
 	width: 100%;
 	position: relative;
 	.post {
@@ -54,6 +54,7 @@
 				margin: 10px 10px 0 10px;
 				text-align: justify;
 				font-size: 15px;
+				font-weight: 300;
 				.tag {
 					font-size: 15px;
 				}
@@ -84,6 +85,7 @@
 					a {
 						color: map-get($colors, black);
 						font-size: 14px;
+						font-weight: 300;
 						i {
 							margin-left: 5px;
 							color: map-get($colors, pink);

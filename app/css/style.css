@@ -6,11 +6,8 @@ body {
   -ms-text-size-adjust: 100%;
   color: rgba(255, 255, 255, 0.95); }
 
-h1 {
+p, a, h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
-
-p, a, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
 
 a {
   color: rgba(255, 255, 255, 0.95); }
@@ -32,7 +29,7 @@ a {
 
 html, body {
   min-width: 100vw;
-  min-height: calc(100vh - 44px);
+  min-height: 100vh;
   background-color: #fff; }
 
 .full {
@@ -85,7 +82,7 @@ html, body {
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 10px; }
+  padding: 10px 10px; }
   .navbar-top ul {
     list-style: none;
     padding: 0;
@@ -99,9 +96,18 @@ html, body {
     -webkit-flex-flow: row wrap;
     justify-content: space-around; }
     .navbar-top ul li {
-      text-align: center; }
+      text-align: center;
+      padding: 5px; }
       .navbar-top ul li.title {
         margin: 0 auto; }
+      .navbar-top ul li.active {
+        border-bottom: 1px solid #fff; }
+        .navbar-top ul li.active:hover {
+          border-bottom-color: rgba(255, 255, 255, 0.6); }
+          .navbar-top ul li.active:hover a {
+            color: rgba(255, 255, 255, 0.6); }
+    .navbar-top ul.tab {
+      margin: 10px 0 0 0; }
 
 .navbar-side {
   width: 100%;
@@ -189,7 +195,7 @@ html, body {
       color: rgba(0, 0, 0, 0.5) !important; }
 
 .trending.posts {
-  margin-top: 40px;
+  margin-top: 54px;
   width: 100%;
   position: relative; }
   .trending.posts .post {
@@ -226,7 +232,8 @@ html, body {
       .trending.posts .post .content p {
         margin: 10px 10px 0 10px;
         text-align: justify;
-        font-size: 15px; }
+        font-size: 15px;
+        font-weight: 300; }
         .trending.posts .post .content p .tag {
           font-size: 15px; }
     .trending.posts .post .reaction {
@@ -247,22 +254,39 @@ html, body {
           text-align: center; }
           .trending.posts .post .reaction ul li a {
             color: #000;
-            font-size: 14px; }
+            font-size: 14px;
+            font-weight: 300; }
             .trending.posts .post .reaction ul li a i {
               margin-left: 5px;
               color: #e37985; }
             .trending.posts .post .reaction ul li a:hover, .trending.posts .post .reaction ul li a:focus {
               color: rgba(0, 0, 0, 0.5); }
 
+.gallery {
+  background-color: #eef0f1; }
+
 .gallery.posts {
-  margin-top: 40px;
+  margin-top: 99px;
   width: 100%;
-  min-height: calc(100vh - 44px);
   position: relative;
   padding: 10px;
-  background-color: #eef0f1;
-  column-count: 2;
+  column-count: 1;
   column-gap: 10px; }
+  @media (min-width: 460px) {
+    .gallery.posts {
+      column-count: 2; } }
+  @media (min-width: 600px) {
+    .gallery.posts {
+      column-count: 3; } }
+  @media (min-width: 768px) {
+    .gallery.posts {
+      column-count: 4; } }
+  @media (min-width: 992px) {
+    .gallery.posts {
+      column-count: 5; } }
+  @media (min-width: 1382px) {
+    .gallery.posts {
+      column-count: 6; } }
   .gallery.posts .post {
     margin: 10px 0 0 0;
     display: inline-block;
@@ -271,6 +295,7 @@ html, body {
     .gallery.posts .post .content {
       width: 100%; }
       .gallery.posts .post .content .img-fluid {
+        width: 100%;
         border-top-right-radius: 4px;
         border-top-left-radius: 4px; }
     .gallery.posts .post .reaction {
@@ -294,7 +319,8 @@ html, body {
           text-align: center; }
           .gallery.posts .post .reaction ul li a {
             color: #000;
-            font-size: 14px; }
+            font-size: 14px;
+            font-weight: 300; }
             .gallery.posts .post .reaction ul li a i {
               margin-left: 5px;
               color: #e37985; }

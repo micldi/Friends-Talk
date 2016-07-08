@@ -1,15 +1,31 @@
+.gallery {
+	background-color: map-get($colors, gray);
+}
 .gallery.posts {
-	margin-top: 40px;
+	margin-top: 99px;
 	width: 100%;
-	min-height: calc(100vh - 44px);
 	position: relative;
 
 	padding: 10px;
 
-	background-color: map-get($colors, gray);
-
-	column-count: 2;
+	column-count: 1;
     column-gap: 10px;
+
+    @include mquery(xs) {
+    	column-count: 2;
+    }
+    @include mquery(sm) {
+    	column-count: 3;
+    }
+    @include mquery(md) {
+    	column-count: 4;
+    }
+    @include mquery(xl) {
+    	column-count: 5;
+    }
+    @include mquery(xxl) {
+    	column-count: 6;
+    }
 
 	.post {
 		margin: 10px 0 0 0;
@@ -21,6 +37,7 @@
 		.content {
 			width: 100%;
 			.img-fluid {
+				width: 100%;
 				border-top-right-radius: 4px;
 				border-top-left-radius: 4px;
 			}
@@ -54,6 +71,7 @@
 					a {
 						color: map-get($colors, black);
 						font-size: 14px;
+						font-weight: 300;
 						i {
 							margin-left: 5px;
 							color: map-get($colors, pink);
