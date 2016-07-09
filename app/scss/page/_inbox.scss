@@ -1,0 +1,93 @@
+.inbox.mails {
+	margin-top: 54px;
+	width: 100%;
+	position: relative;
+	.mail {
+		margin: 0 0 0 40px;
+		border-bottom: 1px solid map-get($colors, gray);
+		position: relative;
+
+		color: black;
+	 	.tag {
+			color: map-get($colors, pink);
+		}
+
+		.info {
+			width: 100%;
+			padding: 10px 0;
+			position: relative;
+
+			.userAvatar {
+				height: 70px;
+			}
+
+			.media-body {
+				padding: 12px 10px;
+				text-align: left;
+			}
+			h3 {
+				font-weight: 300;
+			}
+			h3, a {
+				margin: 0;
+				padding: 0;
+			}
+
+			.mapMark {
+				font-size: 40px;
+				line-height: 65px;
+				color: map-get($colors, darkBlue);
+			}
+		}
+
+		.content {
+			padding-bottom: 10px;
+			p {
+				a {
+					margin: 0;
+					padding: 0;
+					text-align: justify;
+					font-size: 15px;
+					font-weight: 300;
+					color: map-get($colors, black);
+				}
+			}
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 18px;
+			left: -26px;
+			width: 13px;
+			height: 13px;
+
+			border-radius: 100%;
+
+			background: rgb(229,154,114);
+			background: -moz-linear-gradient(-45deg,  rgba(229,154,114,1) 0%, rgba(224,115,94,1) 50%, rgba(210,60,62,1) 100%);
+			background: -webkit-linear-gradient(-45deg,  rgba(229,154,114,1) 0%,rgba(224,115,94,1) 50%,rgba(210,60,62,1) 100%);
+			background: linear-gradient(135deg,  rgba(229,154,114,1) 0%,rgba(224,115,94,1) 50%,rgba(210,60,62,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e59a72', endColorstr='#d23c3e',GradientType=1 );
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 21px;
+			left: -23px;
+			background-color: white;
+			width: 7px;
+			height: 7px;
+
+			border-radius: 100%;
+		}
+
+		&.read {
+			&:before {
+				background: map-get($colors, gray);
+			}
+		}
+	}
+}

@@ -29,7 +29,7 @@ a {
 
 html, body {
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 54px);
   background-color: #fff; }
 
 .full {
@@ -73,8 +73,16 @@ html, body {
   padding-left: .6em;
   border-radius: 10rem; }
 
+.label-navbar {
+  padding: 4px 5px 6px 5px;
+  top: -1px;
+  position: relative; }
+
 .label-red {
   background-color: #df665b; }
+
+.label-dark {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .navbar-top {
   width: 100%;
@@ -329,3 +337,68 @@ html, body {
           .gallery.posts .post .reaction ul li.tag {
             margin: 0 auto;
             line-height: 19px; }
+
+.inbox.mails {
+  margin-top: 54px;
+  width: 100%;
+  position: relative; }
+  .inbox.mails .mail {
+    margin: 0 0 0 40px;
+    border-bottom: 1px solid #eef0f1;
+    position: relative;
+    color: black; }
+    .inbox.mails .mail .tag {
+      color: #e37985; }
+    .inbox.mails .mail .info {
+      width: 100%;
+      padding: 10px 0;
+      position: relative; }
+      .inbox.mails .mail .info .userAvatar {
+        height: 70px; }
+      .inbox.mails .mail .info .media-body {
+        padding: 12px 10px;
+        text-align: left; }
+      .inbox.mails .mail .info h3 {
+        font-weight: 300; }
+      .inbox.mails .mail .info h3, .inbox.mails .mail .info a {
+        margin: 0;
+        padding: 0; }
+      .inbox.mails .mail .info .mapMark {
+        font-size: 40px;
+        line-height: 65px;
+        color: #3d4e5b; }
+    .inbox.mails .mail .content {
+      padding-bottom: 10px; }
+      .inbox.mails .mail .content p a {
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 300;
+        color: #000; }
+    .inbox.mails .mail:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 18px;
+      left: -26px;
+      width: 13px;
+      height: 13px;
+      border-radius: 100%;
+      background: #e59a72;
+      background: -moz-linear-gradient(-45deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
+      background: -webkit-linear-gradient(-45deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
+      background: linear-gradient(135deg, #e59a72 0%, #e0735e 50%, #d23c3e 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e59a72', endColorstr='#d23c3e',GradientType=1 ); }
+    .inbox.mails .mail:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 21px;
+      left: -23px;
+      background-color: white;
+      width: 7px;
+      height: 7px;
+      border-radius: 100%; }
+    .inbox.mails .mail.read:before {
+      background: #eef0f1; }

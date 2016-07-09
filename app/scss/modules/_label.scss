@@ -17,6 +17,15 @@
 	border-radius: 10rem
 }
 
+.label-navbar {
+	padding: 4px 5px 6px 5px;
+	top: -1px;
+	position: relative;
+}
+
 .label-red {
 	background-color: #df665b;
+}
+.label-dark {
+	background-color: map-get($colors, lightBlack);
 }
